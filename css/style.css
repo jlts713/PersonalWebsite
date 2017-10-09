@@ -1,0 +1,441 @@
+/*-------------------*/
+/*GENERAL
+/*-------------------*/
+body{
+	font-family: 'Montserrat', Microsoft JhengHei, sans-serif;	
+	padding-top: 50px;
+}
+
+/*-------------------*/
+/*COLOR
+/*-------------------*/
+.bg-green{
+	background-color: #25392C;
+}
+.bg-ivory{
+	background-color: #F2EFE9;
+}
+.bg-white{
+	background-color: #FFFFFF;
+}
+.text-green{
+	color: #25392C;
+}
+.text-ivory{
+	color: #F2EFE9;
+}
+.text-white{
+	color: #FFFFFF;
+}
+.text-lightgreen{
+	color: #CCDBCD;
+}
+.text-grey{
+	color: #7B7B7B;
+}
+.text-darkgrey{
+	color: #3B3B3B;
+}
+
+/*-------------------*/
+/*SECTION - GENERAL
+/*-------------------*/
+.section{
+	padding-top:80px;
+	padding-bottom:50px;
+}
+.section-header{
+	text-align:center;
+}
+.section-title{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 42px;
+	font-weight: bold;
+}
+.section-subtitle{
+	font-size: 18px;
+}
+.section-divider{
+	width: 80px;
+	height: 2px;
+	background-color: #C2D1C3;
+	margin: 10px auto;
+}
+
+
+/*-------------------*/
+/*SECTION - Cover
+/*-------------------*/
+#cover{
+	padding:130px 0px;
+}
+#cover-title{
+	padding-left:25%;
+	font-size:40px;
+}
+#cover-myname{
+	text-align:center;
+	font-size:80px;
+	font-weight:bold;
+	font-family: 'Gloria Hallelujah', 'Montserrat', sans-serif;
+	margin: 24px 0px;
+}
+#cover-morebtn{
+	text-align:center;
+	font-size:32px;
+}
+
+#cover a img{
+	width:32px;
+	margin:5px;
+}
+
+
+/*-------------------*/
+/*SECTION - About
+/*-------------------*/
+#about-left{
+	text-align:center;
+}
+#mypic{
+	border-radius: 100%;
+	width:150px;
+	margin:20px auto;
+}
+#about-left p{
+	font-size:20px;
+	font-family: 'Montserrat', Microsoft JhengHei, sans-serif;
+}
+#social-icon{
+	margin: 0px auto;
+}
+.icon{
+	width:30px;
+}
+#about-right{
+	padding:15px 0px;
+}
+.intro{
+	font-size:20px;
+}
+
+
+/*-------------------*/
+/*SECTION - Edu
+/*-------------------*/
+.edu-item{
+}
+.edu-year{
+	font-size: 24px;
+	font-weight:bold;
+	text-align:right;
+	padding:10px 20px;
+	margin: 10px 0px;
+}
+.edu-degree{
+	padding:10px 20px;
+	margin: 10px 0px;
+	border:solid #25392C;
+	border-width:1px;
+}
+.degree-title{
+	font-size: 24px;
+	font-weight:bold;
+}
+.degree-engtitle{
+	font-size: 20px;
+	font-weight:bold;
+}
+.degree-note{
+	font-size:18px;
+}
+
+
+/*-------------------*/
+/*SECTION - Exp
+/*-------------------*/
+.exp-item{
+}
+.exp-year{
+	font-size: 24px;
+	font-weight:bold;
+	text-align:right;
+	padding:10px 20px;
+	margin: 10px 0px;
+}
+.exp-group{
+	padding:10px 20px;
+	margin: 10px 0px;
+}
+.group-title{
+	font-size: 24px;
+	font-weight:bold;
+}
+.group-engtitle{
+	font-size: 20px;
+	font-weight:bold;
+}
+.group-note{
+	font-size:18px;
+}
+
+
+/*-------------------*/
+/*SECTION - Work Card
+/*-------------------*/
+.work-card{
+	padding: 0px;
+}
+.card-content{
+	position:relative; /*add to fix card-mask position*/
+	margin: 10px;
+	cursor: pointer;
+	height: 330px;
+}
+.card-img{
+	width: 100%;
+	height: 250px;
+}
+.card-mask{
+	cursor:pointer;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 250px;
+}
+.card-title{
+	margin: 0px;
+	padding: 20px 30px 3px 30px;
+	width: 100%;
+	font-family: 'Montserrat', Microsoft JhengHei, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	white-space: nowrap;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;	/* 支援其他瀏覽器 */
+	-o-text-overflow: ellipsis; 	/* 支援其他瀏覽器 */
+	text-overflow: ellipsis;		/*text exceed width becomes ...*/
+}
+.card-dsp{
+	padding:3px 30px;
+	font-family: 'Montserrat', Microsoft JhengHei, sans-serif;
+	font-size:14px;
+	white-space: nowrap;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;	/* 支援其他瀏覽器 */
+	-o-text-overflow: ellipsis; 	/* 支援其他瀏覽器 */
+	text-overflow: ellipsis;		/*text exceed width becomes ...*/
+}
+.card-content .card-mask {
+	opacity: 0;
+	overflow:visible;
+	border:125px solid rgba(0,0,0,0.4);
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+.card-content span.icon-show {
+	font-size:28px;
+	color:white;
+	position:relative;
+	margin:0 auto;
+	top:-10px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s 0s ease-in-out;
+	-moz-transition: opacity 0.5s 0s ease-in-out;
+	-o-transition: opacity 0.5s 0s ease-in-out;
+	-ms-transition: opacity 0.5s 0s ease-in-out;
+	transition: opacity 0.5s 0s ease-in-out;
+}
+.card-content:hover .card-mask {
+	opacity: 1;
+	border:125px solid rgba(0,0,0,0.4);
+}
+.card-content:hover span.icon-show {
+	opacity:1;
+	-moz-transition-delay: 0.3s;
+	-webkit-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	-ms-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+
+/*-------------------*/
+/*SECTION - Work Modal
+/*-------------------*/
+.modal-fullscreen .modal-content{
+	background: transparent;
+	padding-top: 30px;
+	border:0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.modal-fullscreen{
+	background: #FFFFFF;
+}
+.modal-fullscreen .modal-dialog{
+	margin: 0px;
+	width: 100%;
+}
+.close{
+	font-size:28px;
+}
+.modal-image > iframe{
+	display:block;
+	margin: auto;
+}
+.carousel-inner > .item > img{
+	margin: auto;
+	height:360px;
+	width:auto;
+}
+.my-carousel{
+	overflow:hidden;
+}
+.modal-title{
+	float:left;
+	font-weight:bold;
+}
+.modal-btn-group{
+	text-align:right;
+}
+.modal-btn{
+	background-color:#F2EFE9;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	border-radius:3px;
+	border:2px solid #25392c;
+	display:inline-block;
+	cursor:pointer;
+	color:#25392c;
+	font-family:'Montserrat', sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:6px 10px;
+	margin: 10px 0;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #F2EFE9;
+}
+.modal-btn:hover {
+	background-color:#faf9f7;
+	color:#25392c;
+}
+.modal-btn:active {
+	position:relative;
+	top:1px;
+}
+.modal-dsp{
+	margin: 10px 0px;
+}
+.dsp-title{
+	font-weight:bold;
+	font-size:16px;
+}
+.modal-tags{
+	margin: 20px 0px;
+	text-align: right;
+}
+.tags-key{
+	padding: 5px;
+	margin: 3px;
+	background-color:#25392C;
+	color: #F2EFE9;
+}
+.modal-divider{
+	height: 2px;
+	background-color: #25392C;
+}
+/*-------------------*/
+/*SECTION - Footer
+/*-------------------*/
+footer{
+	text-align:right;
+	padding: 5px;
+}
+
+/*------------------*/
+/* NAVBAR 
+/*------------------*/
+.my-navbar{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	width:100%;
+}
+#brand{
+	font-family: 'Gloria Hallelujah', 'Montserrat', sans-serif;
+	font-size:20px;
+}
+
+/*--place nav-bar--*/
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+.navbar .navbar-collapse {
+	text-align: right;
+}
+/*--end place nav-bar--*/
+
+/*--style nav-bar--*/
+.navbar-default {
+	background-color: #25392c;
+	border-color: #25392c;
+}
+.navbar-default .navbar-brand {
+	color: #f2efe9;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: #f2efe9;
+}
+.navbar-default .navbar-text {
+	color: #f2efe9;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #f2efe9;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #f2efe9;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #f2efe9;
+	background-color: #25392c;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	color: #f2efe9;
+	background-color: #25392c;
+}
+.navbar-default .navbar-toggle {
+	border-color: #25392c;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #25392c;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #f2efe9;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #f2efe9;
+}
+.navbar-default .navbar-link {
+	color: #f2efe9;
+}
+.navbar-default .navbar-link:hover {
+	color: #f2efe9;
+}
+/*--end style nav-bar--*/
