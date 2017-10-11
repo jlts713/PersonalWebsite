@@ -1,0 +1,34 @@
+/*-------------------*/
+/*for mobile
+/*-------------------*/
+@media screen and (max-width:768px){
+	/*--SECTION - About--*/
+	#about-right{
+		padding:15px 20px;
+	}
+	
+	/*--SECTION - Edu--*/
+	.edu-item{
+		padding:0px 10px;
+	}
+	.edu-year{
+		text-align:left;
+		margin: 0px;
+	}
+	.edu-degree{
+		margin: 0px 0px 15px 0px;
+	}
+	
+	/*--SECTION - Exp--*/
+	.exp-item{
+		padding:0px 10px;
+	}
+	.exp-year{
+		text-align:left;
+		margin: 0px;
+	}
+	.exp-group{
+		margin: 0px 0px 15px 0px;
+	}
+
+}
