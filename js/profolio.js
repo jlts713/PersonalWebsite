@@ -23,6 +23,9 @@ $(document).ready(function(){
 	
 	$("#giticon").bind("mouseenter",{iconId:"#giticon", icon:"giticon"} ,iconHoverIn);
 	$("#giticon").bind("mouseleave",{iconId:"#giticon", icon:"giticon"} ,iconHoverOut);
+	
+	$("#mailicon").bind("mouseenter",{iconId:"#mailicon", icon:"mailicon"} ,iconHoverIn);
+	$("#mailicon").bind("mouseleave",{iconId:"#mailicon", icon:"mailicon"} ,iconHoverOut);
 });
 
 	
