@@ -186,7 +186,17 @@
 						<img class="card-img" src="./img/work/lyrics_cover.PNG"></img>
 						<div class="card-mask"></div>
 						<p class="card-title">ESSR System</p>
-						<p class="card-dsp text-grey">分析歌詞情境與情緒之音樂推薦系統</p>
+						<p class="card-dsp text-grey">論文成果：分析歌詞情境與情緒之音樂推薦系統</p>
+					</div>
+				</div>
+				
+				<!--CARD | emotion-->
+				<div class="col-sx-12 col-sm-6 col-md-4 work-card">
+					<div class="card-content bg-white" data-toggle="modal" data-target="#modal-emotion">
+						<img class="card-img" src="./img/work/emotion_cover.PNG"></img>
+						<div class="card-mask"></div>
+						<p class="card-title">Lyrics Emotion</p>
+						<p class="card-dsp text-grey">論文前導作品：分析歌詞情緒主題</p>
 					</div>
 				</div>
 				
@@ -306,6 +316,63 @@
 						<div class="modal-footer">
 							<div class="modal-btn-group">
 								<a class="btn modal-btn" href="http://140.116.245.151:8000/ESSRsystem/" target="_blank">
+									<span class="glyphicon glyphicon-new-window"></span> Launch Website
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--MODAL | Emotion-->
+			<div id="modal-emotion" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content container">
+						<div class="modal-header">
+							<p class="modal-title h2">Lyrics Emotion: Mining Semantic Topics of Lyrics</p>
+							<button type="button" class="close" data-dismiss="modal">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</div>		
+						<div class="modal-body row">
+							<div class="modal-image col-sx-12 col-sm-12 col-md-6">
+								<div id="carousel-emotion" class="carousel slide my-carousel" data-ride="carousel">
+									<div class="carousel-inner" role="listbox">
+										<div class="item active"><img src="./img/work/emotion1.PNG"/></div>
+										<div class="item"><img src="./img/work/emotion2.PNG"/></div>
+										<div class="item"><img src="./img/work/emotion3.PNG"/></div>
+									</div>
+									
+									<a class="left carousel-control" href="#carousel-emotion" role="button" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left" aria-hidden="ture"></span>
+									</a>
+									<a class="right carousel-control" href="#carousel-emotion" role="button" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									</a>
+								</div>
+							</div>
+							<div class="modal-info col-sx-12 col-sm-12 col-md-6">
+								<div class="modal-tags">
+									<span class="tags-key">JavaScript</span>
+									<span class="tags-key">Bootstrap</span>
+									<span class="tags-key">PHP</span>
+									<span class="tags-key">D3.js</span>
+								</div>
+								<div class="modal-dsp">
+									<p class="dsp-title">作品概念</p>
+									<p>碩士論文的前導作品。此系統分析歌詞48種情緒主題分布並以圓餅圖的視覺化方式呈現。</p>
+									<p class="dsp-title">主要技術</p>
+									<p>
+									<b>| 情緒分析：</b>使用中文廣義知網(E-HowNet)作為中文知識庫，對應E-HowNet中的情緒標籤抽取情緒詞彙後，使用Labeled Latent-LDA主題模型進行分析，將文章情緒特徵表達為48個情緒主題機率分布。<br>
+									<b>| 相似歌曲推薦：</b>使用Cosine Similarity計算歌詞間的情緒相似程度，於每首歌詞下方推薦三首情緒主題分布最相似的歌曲。<br>
+									<b>| 資料前處理：</b>歌詞資料爬取魔鏡歌詞網來自305位歌手共21166篇歌詞，經過斷詞與過濾後，最後使用11272篇歌詞，涵蓋300位不同歌手。</p>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div class="modal-btn-group">
+								<a class="btn modal-btn" href="http://140.116.245.150/jlts713/LyricsEmotion/" target="_blank">
 									<span class="glyphicon glyphicon-new-window"></span> Launch Website
 								</a>
 							</div>
@@ -480,7 +547,7 @@
 						</div>
 						<div class="modal-footer">
 							<div class="modal-btn-group">
-								<a class="btn modal-btn" href="./AdItPlus/adplus.php" target="_blank">
+								<a class="btn modal-btn" href="http://140.116.245.150/jlts713/AdItPlus/adplus.php" target="_blank">
 									<span class="glyphicon glyphicon-new-window"></span> Launch Website
 								</a>
 							</div>
@@ -599,7 +666,7 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							*因校慶活動結束，故學校已將活動網頁下架，左方截圖為活動進行時的實際使用情形
+							*因校慶活動結束，故學校已將活動網頁下架，截圖為活動進行時的實際使用情形
 						</div>
 					</div>
 				</div>
