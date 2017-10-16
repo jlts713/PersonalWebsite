@@ -211,6 +211,16 @@
 					</div>
 				</div>
 				
+				<!--CARD | event-->
+				<div class="col-sx-12 col-sm-6 col-md-4 work-card">
+					<div class="card-content bg-white" data-toggle="modal" data-target="#modal-event">
+						<img class="card-img" src="./img/work/event_cover.PNG"></img>
+						<div class="card-mask"></div>
+						<p class="card-title">Event Entity Extraction</p>
+						<p class="card-dsp text-grey">利用CRF模型抽取Event Entity</p>
+					</div>
+				</div>
+				
 				<!--CARD | trans-->
 				<div class="col-sx-12 col-sm-6 col-md-4 work-card">
 					<div class="card-content bg-white" data-toggle="modal" data-target="#modal-trans">
@@ -440,6 +450,67 @@
 					</div>
 				</div>
 			</div>
+			
+			
+			<!--MODAL | Event-->
+			<div id="modal-event" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content container">
+						<div class="modal-header">
+							<p class="modal-title h2">Event Entity Extraction</p>
+							<button type="button" class="close" data-dismiss="modal">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</div>		
+						<div class="modal-body row">
+							<div class="modal-image col-sx-12 col-sm-12 col-md-6">
+								<div id="carousel-event" class="carousel slide my-carousel" data-ride="carousel">
+									<div class="carousel-inner" role="listbox">
+										<div class="item active"><img src="./img/work/event1.PNG"/></div>
+										<div class="item"><img src="./img/work/event2.PNG"/></div>
+										<div class="item"><img src="./img/work/event3.PNG"/></div>
+										<div class="item"><img src="./img/work/event4.PNG"/></div>
+									</div>
+									
+									<a class="left carousel-control" href="#carousel-event" role="button" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left" aria-hidden="ture"></span>
+									</a>
+									<a class="right carousel-control" href="#carousel-event" role="button" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									</a>
+								</div>
+							</div>
+							<div class="modal-info col-sx-12 col-sm-12 col-md-6">
+								<div class="modal-tags">
+									<span class="tags-key">JavaScript</span>
+									<span class="tags-key">Bootstrap</span>
+									<span class="tags-key">PHP</span>
+									<span class="tags-key">CRF++</span>
+								</div>
+								<div class="modal-dsp">
+									<p class="dsp-title">作品概念</p>
+									<p>我們將Event定義為兩種類型，並嘗試透過訓練CRF模型來抽取Event Entity。</p>
+									<p class="dsp-title">主要技術</p>
+									<p>
+									<b>| Event類型：</b>我們定義兩種類型的Event:<br>
+									ACT: Activity, 通常指實際動作或日常行為，經常包含一及物或不及物動詞，如熬夜、討論、買食物、參加會議等。<br>
+									EVE: Event, 通常用來指人事物的狀態如：缺水、手腕受傷等，或較大型的事件，如選舉、畢業等。<br>
+									<b>| CRF模型訓練：</b>爬取換日線網站文章，人工標記100篇共約12萬單詞後訓練CRF模型進行序列標註。使用標記意義如下：<br>
+									First Level: B-詞首; I-詞中; E-詞尾; S-單詞; O-在Entity間但非主要詞彙; <br>Second Level: EVE-Event Entity; ACT-Activity Entity; O-其他非目標詞<br>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<!--div class="modal-btn-group">
+								<a class="btn modal-btn" href="http://140.116.245.150/jlts713/LyricsEmotion/" target="_blank">
+									<span class="glyphicon glyphicon-new-window"></span> Launch Website
+								</a>
+							</div-->
+						</div>
+					</div>
+				</div>
+			</div>
+			
 			
 			<!--MODAL | trans-->
 			<div id="modal-trans" class="modal modal-fullscreen fade" tabindex="-1" role="dialog" aria-hidden="true">
